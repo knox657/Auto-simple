@@ -412,13 +412,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
     elif query.data == "buy_premium":
         btn = [            
-            [InlineKeyboardButton("✅sᴇɴᴅ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ ʜᴇʀᴇ✅", url="https://t.me/Rk_botowner")],
+            [InlineKeyboardButton("✅sᴇɴᴅ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ ʜᴇʀᴇ✅", url="https://t.me/Lordsakunaa")],
             [InlineKeyboardButton("⚠️ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.reply_photo(
-            photo="https://graph.org/file/a9913b7dcabb3f75efc5d.jpg",
-            caption="**⚡️Buy Premium Now\n\n ╭━━━━━━━━╮\n    Premium Plans\n  • ₹10 - 60 day (Trial)\n  • ₹25 - 6 Months (Trial)\n  • ₹50 - 1.5 Year\n  • ₹120 - channel(1Million+files) \n  • ₹220 - channel(3Million+files)\n  • ₹400 - All\n╰━━━━━━━━╯\n\nPremium Features ♤ᵀ&ᶜ\n\n☆ New/Old Movies and Series\n☆ High Quality available\n☆ Get Files Directly \n☆ High speed Download links\n☆ Full Admin support \n☆ Request will be completed in 1 hour if available.\n\nᴜᴘɪ ɪᴅ ➢ <code>Rishikesh-Sharma09@axl</code>\n\n⚠️Send SS After Payment⚠️\n\n~ After sending a Screenshot please give us 30 minuts to upgrade you in the premium version.**",
+            photo="https://telegra.ph//file/69f21a42f2f01c7ef5b4d.jpg",
+            caption="**⚡️Buy Premium Now\n\n ╭━━━━━━━━╮\n    Premium Plans\n  • ₹10 - 60 day (Trial)\n  • ₹25 - 6 Months (Trial)\n  • ₹50 - 1 Year\n╰━━━━━━━━╯\n\nPremium Features ♤ᵀ&ᶜ\n\n☆ New/Old Movies and Series\n☆ High Quality available\n☆ Get Files Directly \n☆ High speed Download links\n☆ Full Admin support \n☆ Request will be completed in 1 hour if available.\n\nᴜᴘɪ ɪᴅ ➢ <code>emperornehal@fam</code>\n\n⚠️Send SS After Payment⚠️\n\n~ After sending a Screenshot please give us 30 minuts to upgrade you in our premium Members.**",
             reply_markup=reply_markup
         )
         return 
