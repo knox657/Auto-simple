@@ -560,12 +560,12 @@ async def remove_premium_cmd_handler(client, message):
 @Client.on_message(filters.command("plans"))
 async def plans_cmd_handler(client, message):                
     btn = [            
-        [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url="t.me/Rk_botowner")],
+        [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url="t.me/Lordsakunaa")],
         [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
     ]
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
-        photo="https://graph.org/file/a9913b7dcabb3f75efc5d.jpg",
+        photo="https://telegra.ph//file/69f21a42f2f01c7ef5b4d.jpg",
         caption="**Pʀᴇᴍɪᴜᴍ Fᴇᴀᴛᴜʀᴇs 🎁\n\n☆ No Need To Verify\n☆ Ad Free Experience\n☆ Unlimited Movie And Series",
         reply_markup=reply_markup
     )
