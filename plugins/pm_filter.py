@@ -418,7 +418,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.reply_photo(
             photo="https://telegra.ph//file/69f21a42f2f01c7ef5b4d.jpg",
-            caption="**⚡️Buy Premium Now\n\n ╭━━━━━━━━╮\n    Premium Plans\n  • ₹10 - 60 day (Trial)\n  • ₹25 - 6 Months (Trial)\n  • ₹50 - 1 Year\n╰━━━━━━━━╯\n\nPremium Features ♤ᵀ&ᶜ\n\n☆ New/Old Movies and Series\n☆ High Quality available\n☆ Get Files Directly \n☆ High speed Download links\n☆ Full Admin support \n☆ Request will be completed in 1 hour if available.\n\nᴜᴘɪ ɪᴅ ➢ <code>emperornehal@fam</code>\n\n⚠️Send SS After Payment⚠️\n\n~ After sending a Screenshot please give us 30 minuts to upgrade you in our premium Members.**",
+            caption="**⚡️Buy Premium Now\n\n ╭━━━━━━━━╮\n    Premium Plans\n  • ₹10(1$) - 60 day \n  • ₹25(2$) - 6 Months (Trial)\n  • ₹50(3$)  - 1 Year\n╰━━━━━━━━╯\n\nPremium Features ♤ᵀ&ᶜ\n\n☆ New/Old Movies and Series\n☆ High Quality available\n☆ Get Files Directly \n☆ High speed Download links\n☆ Full Admin support \n☆ Request will be completed in 1 hour if available.\n\nᴜᴘɪ ɪᴅ ➢ <code>emperornehal@fam</code>\n\n⚠️Send SS After Payment⚠️\n\n~ After sending a Screenshot please give us 30 minuts to upgrade you in our premium Members.**",
             reply_markup=reply_markup
         )
         return 
