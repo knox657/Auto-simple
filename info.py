@@ -48,7 +48,7 @@ else:
 INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001748572062').split()]
 if len(INDEX_CHANNELS) == 0:
     print('Info - INDEX_CHANNELS is empty')
-AUTH_CHANNEL = [int(auth_channels) for auth_channels in environ.get('AUTH_CHANNEL', '-1001967167299').split()]
+AUTH_CHANNEL = [int(auth_channels) for auth_channels in environ.get('AUTH_CHANNEL', '-1001967167299 -1001955515603').split()]
 if len(AUTH_CHANNEL) == 0:
     print('Info - AUTH_CHANNEL is empty')
 LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1001748572062')
@@ -60,7 +60,7 @@ else:
 IS_FSUB = is_enabled('IS_FSUB', True)
 
 # support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1001967167299')
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1001955515603')
 if len(SUPPORT_GROUP) == 0:
     print('Error - SUPPORT_GROUP is missing, exiting now')
     exit()
@@ -84,8 +84,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+ylvI8ZZcge80MWRl')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/purplebotz')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+nNxrEiZPumNlMjBl')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/ezpzsupport")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/ezpzsupport")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/ezpzsupport/6")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/ezpzsupport/19")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
