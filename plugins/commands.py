@@ -45,19 +45,19 @@ async def start(client, message):
         await update_verify_status(message.from_user.id, is_verified=False)
     
     if (len(message.command) != 2) or (len(message.command) == 2 and message.command[1] == 'start'):
-        buttons = [[
+    buttons = [[
             InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('🔎 Search Movies 🔍', url=f"https://t.me/+nNxrEiZPumNlMjBl")
+            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ 🔍', switch_inline_query_current_chat='')
         ],[
             InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_LINK),
             InlineKeyboardButton('💡 Support Group 💡', url=SUPPORT_LINK)
         ],[
-            InlineKeyboardButton('♀️ ChatG.P.T-4', url=f"t.me/chatgpt490_bot"),
-            InlineKeyboardButton('📚 Video Downloader', url=f"t.me/Url_uploader55bot"),
-            InlineKeyboardButton('👤 More Bots', url='https://t.me/ezpzsupport/17')
+            InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='my_about'),
+            InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', callback_data='my_owner')
         ],[
-            InlineKeyboardButton('💰 Report Problem 💰', url='@Lordsakunaa')
+            InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
