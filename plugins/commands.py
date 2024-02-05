@@ -45,7 +45,7 @@ async def start(client, message):
         await update_verify_status(message.from_user.id, is_verified=False)
     
     if (len(message.command) != 2) or (len(message.command) == 2 and message.command[1] == 'start'):
-    buttons = [[
+        buttons = [[
             InlineKeyboardButton("+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +", url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
             InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ 🔍', switch_inline_query_current_chat='')
