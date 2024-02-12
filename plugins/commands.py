@@ -83,7 +83,7 @@ async def start(client, message):
                 InlineKeyboardButton("📌 Get File 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
-        await message.reply(f"✅ You successfully verified until: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
+        await message.reply(f"✅ You Are Premium Member until: {get_readable_time(VERIFY_EXPIRE)}\nCheck Membership - /plans\n\nPlease search Movie again❗ ", reply_markup=reply_markup, protect_content=True)
         return
     
     verify_status = await get_verify_status(message.from_user.id)
@@ -93,11 +93,11 @@ async def start(client, message):
             await update_verify_status(message.from_user.id, verify_token=token, link="" if mc == 'inline_verify' else mc)
             link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API, f'https://t.me/{temp.U_NAME}?start=verify_{token}')
             btn = [[
-                InlineKeyboardButton("🧿 Verify 🧿", url=link)
+                InlineKeyboardButton("🧿 Download 🧿", url=link)
             ],[
                 InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
             ]]
-            await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+            await message.reply("CLICK ON DOWNLOAD TO GET YOUR REQUESTED MOVIE\nYou not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
     else:
         pass
