@@ -48,7 +48,7 @@ else:
 INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001748572062').split()]
 if len(INDEX_CHANNELS) == 0:
     print('Info - INDEX_CHANNELS is empty')
-AUTH_CHANNEL = [int(auth_channels) for auth_channels in environ.get('AUTH_CHANNEL', '-1001967167299').split()]
+AUTH_CHANNEL = [int(auth_channels) for auth_channels in environ.get('AUTH_CHANNEL', '').split()]
 if len(AUTH_CHANNEL) == 0:
     print('Info - AUTH_CHANNEL is empty')
 LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1001748572062')
@@ -57,7 +57,7 @@ if len(LOG_CHANNEL) == 0:
     exit()
 else:
     LOG_CHANNEL = int(LOG_CHANNEL)
-IS_FSUB = is_enabled('IS_FSUB', True)
+IS_FSUB = is_enabled('IS_FSUB', False)
 
 # support group
 SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1001955515603')
