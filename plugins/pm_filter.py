@@ -70,7 +70,7 @@ async def give_filter(client, message):
                 await message.reply_text(f'Total {total} results found in this group', reply_markup=InlineKeyboardMarkup(btn))
             return
             
-        if message.text.startswith("/"):
+        if message.text is not None and message.text.startswith("/"):
             return
             
         elif '@admin' in message.text.lower() or '@admins' in message.text.lower():
