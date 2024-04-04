@@ -776,7 +776,7 @@ async def auto_filter(client, msg, spoll=False):
         search, files, offset, total_results = spoll
     if spoll:
         await msg.message.delete()
-        try:
+    try:
         await message.react(emoji="🔍")
     except:
         pass
