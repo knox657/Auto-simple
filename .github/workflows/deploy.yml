@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "knox657-all-url-upl-59"
-          entrypoint: "DockerFile"
+          entrypoint: "requirements.txt"
           root: "."
