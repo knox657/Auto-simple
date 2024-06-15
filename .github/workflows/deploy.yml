@@ -39,4 +39,4 @@ jobs:
         with:
           project: "knox657-all-url-upl-59"
           entrypoint: "requirements.txt"
-          root: "."
+          root: "./Dockerfile"
