@@ -23,8 +23,13 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Build step
-        run: "RUN pip install -r requirements.txt"
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install step
+        run: "pip install -r requirements.txt"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
