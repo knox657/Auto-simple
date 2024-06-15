@@ -32,11 +32,11 @@ jobs:
         run: "pip install -r requirements.txt"
 
       - name: Build step
-        run: "python3 bot.py"
+        run: "python bot.py"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "knox657-all-url-upl-59"
+          project: "knox657-auto-simple-27"
           entrypoint: "requirements.txt"
           root: "./Dockerfile"
