@@ -24,11 +24,11 @@ jobs:
           deno-version: v1.x
 
       - name: Build step
-        run: "deno task build"
+        run: "deno.json"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "knox657-auto-simple-27"
-          entrypoint: "main.ts"
+          entrypoint: "DockerFile"
           root: "."
