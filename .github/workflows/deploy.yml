@@ -23,20 +23,12 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-
-      - name: Install step
-        run: "pip install -r requirements.txt"
-
       - name: Build step
-        run: "python bot.py"
+        run: "RUN pip install -r requirements.txt"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "knox657-auto-simple-27"
+          project: "knox657-all-url-upl-59"
           entrypoint: "DockerFile"
-          root: ". /Auto-Filter-Bot"
+          root: "."
